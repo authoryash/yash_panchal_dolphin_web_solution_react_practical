@@ -23,8 +23,8 @@ function App() {
   }
 
   const currentProducts = currentProductList.slice(
-    currentPage - 1,
-    currentPage + 4
+    (currentPage - 1) * 5,
+    currentPage * 5
   );
 
   useEffect(() => {
